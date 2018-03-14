@@ -14,10 +14,23 @@
 # ruby tests/05_count_letters_test.rb
 #
 
-def count_letters (string)
-  result = {} # You'll need an empty hash to get started!
-  
-  # Your code here
 
-  result # return the hash
+def count_letters (string)
+ result = {} # You'll need an empty hash to get started!
+ string.each_char do |c|
+   result[c] += 1 if result[c] != nil
+   result[c] = 1 if result[c] == nil
+ end
+ result # return the hash
 end
+
+count_letters("hello")
+
+result = string.split('')
+  result.each do |item|
+    if result.scan(/[item]/)
+      result.push[]
+  end
+
+  result.each do |count|
+    if result
