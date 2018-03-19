@@ -20,7 +20,14 @@
 #
 #Don't use any helpers other than .each
 #Try writing it on a whiteboard or paper first
-def in_array_advanced (needle, haystack, strict)
-  # Your code here
 
+
+def in_array_advanced (needle, haystack, strict)
+  in_array_advanced.each do |check|
+  if  == check return true
+  else return false
 end
+
+def in_array (needle)
+
+in_array("HeLLo", ["hi", "howdy", "HeLLo"], true)

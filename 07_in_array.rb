@@ -16,6 +16,8 @@
 #
 #Don't use any helpers other than .each
 #Try writing it on a whiteboard or paper first
+
 def in_array (needle, haystack)
-  # Your code here
+  haystack.each { |check| return true if needle == check}
+  false
 end
