@@ -24,6 +24,5 @@
 #
 
 def nthFibonacci (n)
-seq = [0,1,1,2,5,8,13]
-return seq[:n]
+#your code here
 end
