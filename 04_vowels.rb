@@ -14,8 +14,6 @@
 # ruby tests/04_vowels_test.rb
 #
 
-def vowels (string)
-  string.scan(/(AaEeUuIiOo)/)
+def vowels(string)
+  string.scan(/[AaEeUuIiOo]/)
 end
-
-puts vowels('hello')
