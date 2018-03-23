@@ -15,5 +15,7 @@
 #
 
 def vowels (string)
-  string.scan(/[AaEeUuIiOo]/)
+  string.scan(/(AaEeUuIiOo)/)
 end
+
+puts vowels('hello')
