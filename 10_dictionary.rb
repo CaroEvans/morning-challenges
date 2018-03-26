@@ -14,7 +14,11 @@
 # dictionary = Dictionary.new
 # dictionary.add_word('ruby', 'A precious stone')
 # dictionary.total_words -> should return 1
+<<<<<<< HEAD
 # dictionary.lookup('ruby') -> should return 'A previous stone'
+=======
+# dictionary.lookup('ruby') -> should return 'A precious stone'
+>>>>>>> 19adf5165ac13225621db205fbc4fee641b9b3fe
 #
 # Check your solution by running the tests:
 # ruby tests/10_dictionary_test.rb

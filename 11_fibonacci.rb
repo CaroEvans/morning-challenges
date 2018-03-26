@@ -23,6 +23,7 @@
 # ruby tests/11_fibonacci_test.rb
 #
 
+<<<<<<< HEAD
 def nthFib(n)
 fib = [0,1]
 x = 0
@@ -33,3 +34,8 @@ x = 0
 fib[-2]
 end
 puts nthFib(6)
+=======
+def nthFibonacci (n)
+  # Your code here    
+end
+>>>>>>> 19adf5165ac13225621db205fbc4fee641b9b3fe

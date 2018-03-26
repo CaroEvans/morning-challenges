@@ -23,14 +23,3 @@ def count_letters (string)
  end
  result # return the hash
 end
-
-# count_letters("hello")
-
-# result = string.split('')
-#   result.each do |item|
-#     if result.scan(/[item]/)
-#       result.push[]
-#   end
-#
-#   result.each do |count|
-#     if result
