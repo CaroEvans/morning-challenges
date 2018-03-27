@@ -12,10 +12,20 @@
 # in_array("drake", ["jayz", "kanye", "yachty"]) should return false
 #
 # Check your solution by running the tests:
-# ruby tests 07_in_array.rb
+# ruby tests/07_in_array.rb
 #
 #Don't use any helpers other than .each
 #Try writing it on a whiteboard or paper first
+
+  # def in_array (needle, haystack)
+  #   haystack.each { |check| return true if needle == check}
+  #   false
+  # end
+
 def in_array (needle, haystack)
-  # Your code here
+  if haystack.include?(needle)
+    return true
+  else
+    return false
+  end
 end

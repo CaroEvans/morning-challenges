@@ -18,6 +18,14 @@
 # ruby tests/09_unique_test.rb
 #
 
-def unique (mylist)
-  # Your code here
+def unique(mylist)
+  mylist_unique = []
+  mylist.each do |item|
+    unless mylist_unique.include?(item)
+      mylist_unique.push(item)
+    end
+  end
+  return mylist_unique
 end
+
+#super quick way: mylist & mylist
