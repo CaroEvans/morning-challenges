@@ -17,6 +17,7 @@
 #Don't use any helpers other than .each
 #Try writing it on a whiteboard or paper first
 
+<<<<<<< HEAD
   # def in_array (needle, haystack)
   #   haystack.each { |check| return true if needle == check}
   #   false
@@ -28,4 +29,8 @@ def in_array (needle, haystack)
   else
     return false
   end
+=======
+def in_array (needle, haystack)
+#your code here
+>>>>>>> 733edf5808e3b9323de492faef9c96f846fbfba7
 end
