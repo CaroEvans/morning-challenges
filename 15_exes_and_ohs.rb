@@ -22,19 +22,34 @@
 # ruby tests/15_exes_and_ohs_test.rb
 #
 
+#first, longer way:
+# def ExesAndOhs(string)
+#   one = 0
+#   two = 0
+#   string.each_char do |c|
+#     if c == 'x' || c == 'X'
+#       one += 1
+#     elsif c == 'o' || c == 'O'
+#       two += 1
+#     end
+#   end
+#   if one == two
+#     return true
+#   else
+#     return false
+#   end
+# end
+
 def ExesAndOhs(string)
-  one = 0
-  two = 0
+  xs = 0
+  os = 0
   string.each_char do |c|
-    if (c) == 'x' || (c) == 'X'
-      one += 1
-    elsif (c) == 'o' || (c) == 'O'
-      two += 1
+    case c.downcase
+    when 'x'
+      xs += 1
+    when 'o'
+      os += 1
     end
   end
-  if one == two
-    return true
-  else 
-    return false
-  end
+  return xs == os ? true : false
 end
