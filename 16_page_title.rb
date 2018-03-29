@@ -10,6 +10,8 @@
 #
 # Check your answers by running the tests:
 # ruby tests/16_page_title_test.rb
+
+#Long way:
 #
 # require 'metainspector'
 #
@@ -21,9 +23,6 @@
 # end
 #
 # pageTitle('google.com')
-
-
-
 
 require 'metainspector'
 
