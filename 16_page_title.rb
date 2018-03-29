@@ -27,5 +27,5 @@
 require 'metainspector'
 
 def pageTitle(url)
-  puts MetaInspector.new(url).title
+  return MetaInspector.new(url).title
 end
