@@ -3,9 +3,9 @@
 # Extend the Dictionary class.
 #
 # It should have three methods:
-# .add_word(word, definition) -> Should store a word and definition
-# .lookup(word) -> Should return a definition
-# .total_words -> Should return the number of words stored
+.add_word(word, definition) -> Should store a word and definition
+.lookup(word) -> Should return a definition
+.total_words -> Should return the number of words stored
 #
 # Difficulty:
 # 4/10
@@ -14,11 +14,8 @@
 # dictionary = Dictionary.new
 # dictionary.add_word('ruby', 'A precious stone')
 # dictionary.total_words -> should return 1
-<<<<<<< HEAD
 # dictionary.lookup('ruby') -> should return 'A previous stone'
-=======
 # dictionary.lookup('ruby') -> should return 'A precious stone'
->>>>>>> 19adf5165ac13225621db205fbc4fee641b9b3fe
 #
 # Check your solution by running the tests:
 # ruby tests/10_dictionary_test.rb
