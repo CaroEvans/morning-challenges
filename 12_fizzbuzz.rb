@@ -26,4 +26,35 @@
 # ...etc
 #
 
-# Your code here
+#Just to print list of numbers:
+# number = 0
+# while number != 100 do
+#   number += 1
+#   if number % 3 == 0 && number % 5 != 0
+#   puts "Fizz"
+#   elsif number % 5 == 0 && number % 3 != 0
+#   puts "Buzz"
+# elsif number % 5 == 0 && number % 3 == 0
+#   puts "FizzBuzz"
+#   else
+#   puts number
+#   end
+# end
+
+def fizz_buzz(max)
+  @array = []
+  number = 0
+  while number != (max) do
+    number += 1
+    if number % 3 == 0 && number % 5 != 0
+    @array.push "Fizz"
+    elsif number % 5 == 0 && number % 3 != 0
+    @array.push "Buzz"
+    elsif number % 5 == 0 && number % 3 == 0
+    @array.push "FizzBuzz"
+    else
+    @array.push number
+    end
+  end
+  return @array[-1]
+end

@@ -24,8 +24,8 @@ class Dictionary
   def initialize
     @dictionary = []
   end
-  def add_word(x, y)
-    @dictionary.push({word:x, definition:y})
+  def add_word(word, definition)
+    @dictionary.push({word:word, definition:definition})
   end
   def lookup(word)
     @dictionary.each do |c|
