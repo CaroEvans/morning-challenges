@@ -20,7 +20,7 @@
 #
 #Don't use any helpers other than .each
 #Try writing it on a whiteboard or paper first
-<<<<<<< HEAD
+
 
 def in_array_advanced (needle, haystack, strict)
   haystack.each do |word|
@@ -35,21 +35,6 @@ def in_array_advanced (needle, haystack, strict)
     end
   end
   return false
-=======
-<<<<<<< HEAD
-
-
-def in_array_advanced (needle, haystack, strict)
-  in_array_advanced.each do |check|
-  if  == check return true
-  else return false
-=======
-def in_array_advanced (needle, haystack, strict)
-  # Your code here
->>>>>>> a27e985a082512b8706ff996c21bcd6320db76f3
->>>>>>> 733edf5808e3b9323de492faef9c96f846fbfba7
 end
 
-def in_array (needle)
-
-in_array("HeLLo", ["hi", "howdy", "HeLLo"], true)
+# in_array_advanced("HeLLo", ["hi", "howdy", "HeLLo"], true)
