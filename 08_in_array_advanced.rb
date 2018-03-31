@@ -39,7 +39,7 @@
 
 def in_array_advanced (needle, haystack, strict)
   haystack.each do |word|
-    return true if strict == true && word == needle || strict == false && word.downcase == needle.downcase
+    return true if strict.eql?(true) && word.eql?(needle) || strict == false && word.downcase.eql?(needle.downcase)
   end
   return false
 end
