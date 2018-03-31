@@ -29,9 +29,7 @@ class Dictionary
   end
   def lookup(word)
     @dictionary.each do |c|
-      if c[:word] == word
-        return c[:definition]
-      end
+      return c[:definition] if c[:word] == word
     end
   end
   def total_words
