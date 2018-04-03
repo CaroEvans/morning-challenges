@@ -39,9 +39,10 @@
 
 def in_array_advanced (needle, haystack, strict)
   haystack.each do |word|
-    return true if strict.eql?(true) && word.eql?(needle) || strict == false && word.downcase.eql?(needle.downcase)
+    return true if strict.eql?(true) && word.eql?(needle) || strict.eql?(false) && word.downcase.eql?(needle.downcase)
   end
   return false
 end
 
-# in_array_advanced("HeLLo", ["hi", "howdy", "HeLLo"], true)
+
+in_array_advanced("HeLLo", ["hi", "howdy", "HeLLo"], true)

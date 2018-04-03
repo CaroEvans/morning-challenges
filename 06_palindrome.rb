@@ -37,3 +37,7 @@ def palindrome (string)
     return false
   end
 end
+
+# def palindrome (string)
+# string.reverse == string ? true : false
+# end

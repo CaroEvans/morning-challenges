@@ -23,22 +23,22 @@
 #
 
 #first, longer way:
-# def ExesAndOhs(string)
-#   one = 0
-#   two = 0
-#   string.each_char do |c|
-#     if c == 'x' || c == 'X'
-#       one += 1
-#     elsif c == 'o' || c == 'O'
-#       two += 1
-#     end
-#   end
-#   if one == two
-#     return true
-#   else
-#     return false
-#   end
-# end
+def ExesAndOhs(string)
+  one = 0
+  two = 0
+  string.each_char do |c|
+    if c == 'x' || c == 'X'
+      one += 1
+    elsif c == 'o' || c == 'O'
+      two += 1
+    end
+  end
+  if one == two
+    return true
+  else
+    return false
+  end
+end
 
 def ExesAndOhs(string)
   xs = 0
