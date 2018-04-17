@@ -10,6 +10,7 @@
 #
 # Check your answers by running the tests:
 # ruby tests/16_page_title_test.rb
+<<<<<<< HEAD
 
 #Long way:
 #
@@ -28,4 +29,10 @@ require 'metainspector'
 
 def pageTitle(url)
   return MetaInspector.new(url).title
+=======
+#
+
+def pageTitle(url)
+  # your code here
+>>>>>>> ff26f20482783fcc77584a400a0c3cc43f06f6da
 end
