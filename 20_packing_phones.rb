@@ -46,7 +46,6 @@ formulas.each do |n|
   if n >= hn
     hn = n
     tx.push(n)
-
   end
 
 end
