@@ -8,6 +8,7 @@
 # Head office want a complete sku list with no duplicates.
 
 # Easy to do right? Now try working it out with three lines of code, you should be able to do it with 6 words and some operators and syntax.
+<<<<<<< HEAD
 
 m = ["112334", "276834", "098464", "356498", "065134", "124589", "132548", "102334", "278834", "078464",  "356298", "085134", "134589", "132598", "152334", "876834", "088464", "336498", "005134", "124580",  "132588", "102333", "268834", "098464", "956298", "081134", "134889", "132698"]
 
@@ -18,3 +19,5 @@ def add_remove_duplicates(array1,array2)
 end
 
 add_remove_duplicates(m,b)
+=======
+>>>>>>> 343ea22cc0547e78c803676deb89c7711cffb211
