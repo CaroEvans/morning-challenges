@@ -19,7 +19,7 @@
 
 
   def in_array (needle, haystack)
-    haystack.each { |check| return true if needle == check}
+    haystack.each { |haystack_item| return true if needle == haystack_item}
     false
   end
 
