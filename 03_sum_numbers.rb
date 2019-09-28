@@ -14,6 +14,12 @@
 # ruby tests/03_sum_numbers_test.rb
 #
 
+# def sum_numbers (numbers)
+#   numbers.reduce(:+)
+# end
+## filter and reduce are aliases
 def sum_numbers (numbers)
-  numbers.sum
+  (numbers).filter do |sum, num| 
+    sum + num 
+  end
 end

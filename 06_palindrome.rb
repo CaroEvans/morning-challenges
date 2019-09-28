@@ -16,26 +16,12 @@
 #
 
 # long way:
-# def palindrome (string)
-#   result = []
-#   string.each_char do |char|
-#     result.unshift(char)
-#   end
-#   puts result.inspect
-#   puts string.split(//).inspect
-#   if string.split(//) == result
-#     return true
-#   else
-#     return false
-#   end
-# end
-
 def palindrome (string)
-  if string.reverse == string
-    return true
-  else
-    return false
+  result = []
+  string.each_char do |char|
+    result.unshift(char)
   end
+  string.chars == result ? true : false
 end
 
 # def palindrome (string)

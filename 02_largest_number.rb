@@ -15,9 +15,7 @@
 #
 
 def largest_number (number_1, number_2)
-  if number_1 > number_2
-    number_1 #returns
-  else
-    number_2 #returns
-  end
+  return 'numbers are equal' if number_1 == number_2
+  return number_1 if number_1 > number_2
+  return number_2 if number_2 > number_1
 end

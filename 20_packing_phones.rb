@@ -49,3 +49,5 @@ puts grouped_by_box_side[2][:"22.1"]
 # (64*2) + 40 = 168
 # 2 * {:box_height=>22.1, :phone_height=>7.4, :dimensions=>[4.0, 5.0, 7.4, 32.0, 43.0, 22.1], :phones_in_layer=>64, :ratio=>8.648648648648647}
 # 1 * {:box_height=>22.1, :phone_height=>5.0, :dimensions=>[4.0, 7.4, 5.0, 32.0, 43.0, 22.1], :phones_in_layer=>40, :ratio=>8.0}
+
+# Idea - find percentage of box height for phone height
