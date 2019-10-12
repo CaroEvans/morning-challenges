@@ -15,5 +15,7 @@
 #
 
 def vowels (string)
-  # Your code here
+  return string.scan(/[aeiou]/i)
 end
+
+vowels('hello friend')

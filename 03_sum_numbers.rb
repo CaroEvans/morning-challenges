@@ -15,5 +15,11 @@
 #
 
 def sum_numbers (numbers)
-  # Your code here
+  return numbers.inject(:+)
 end
+sum_numbers([1,2,3])
+
+# alias methods:
+# map and collect
+# filter and select
+# reduce and inject

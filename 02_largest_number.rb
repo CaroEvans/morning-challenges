@@ -15,5 +15,8 @@
 #
 
 def largest_number (number_1, number_2)
-  # Your code here
+  comparison = number_1 <=> number_2
+  comparison < 0 ? number_2 : number_1
 end
+
+largest_number(2,4)
