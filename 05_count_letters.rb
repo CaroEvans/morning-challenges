@@ -17,7 +17,7 @@
 def count_letters (string)
   result = {}
   
-  string.each_char do |letter|
+  string.each_char do |char|
     result[letter] ? result[letter] += 1 : result[letter] = 1
   end
 

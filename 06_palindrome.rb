@@ -16,5 +16,15 @@
 #
 
 def palindrome (string)
-  # Your code here
+  array_of_chars = string.chars
+  shift_index_amount = array_of_chars.length - 1
+  new_array = []
+  array_of_chars.each_index do |index|
+    new_index = shift_index_amount - index
+    new_array[new_index] = array_of_chars[index]
+  end 
+
+  return string == new_array.join
 end
+
+palindrome('racecar')
