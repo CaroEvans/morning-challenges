@@ -15,5 +15,13 @@
 #
 
 def calculate_income_tax (income)
-  # Your code here!
+  tax_details = {income: income, tax: 0, income_after_tax: income}
+  case income 
+  when income < 18_200
+    tax_details
+  when income > 18_201 && income < 37_000
+    tax_details[:tax] = (3_572 + (0.3250 * (income - 37_00)))
+    tax_details[:income_after_tax] = income - tax_details[:tax]
+    tax_details
+  end
 end
