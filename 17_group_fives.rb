@@ -11,3 +11,15 @@ second method the array [9, 4, 25, 3, 5, 30, 2, 8, 10, 100] it would return
 Let the tests help you :)
 ruby tests/17_group_fives_test.rb
 =end
+def divisible_by_five(num)
+  num % 5 == 0 ? true : false
+end
+def group_fives(num_array)
+  divisable_by_5 = []
+  not_divisable_by_5 = []
+  num_array.each do |num|
+    divisible_by_five(num) ? divisable_by_5.push(num) : not_divisable_by_5.push(num)
+  end
+  array = [divisable_by_5, not_divisable_by_5]
+end
+

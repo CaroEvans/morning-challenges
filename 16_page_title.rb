@@ -12,6 +12,14 @@
 # ruby tests/16_page_title_test.rb
 #
 
+require 'nokogiri'
+require 'open-uri'
+
 def pageTitle(url)
-  # your code here
+  open(url) do |f|
+    doc = Nokogiri::HTML(f)
+    doc.at_css('title').text
+  end
 end
+
+#

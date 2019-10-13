@@ -23,5 +23,11 @@
 #
 
 def ExesAndOhs(string)
-  # yo' co' here
+  x_count = 0
+  o_count = 0
+  string.downcase.each_char do |char|
+    x_count += 1 if char == 'x'
+    o_count += 1 if char == 'o'
+  end
+  x_count == o_count ? true : false
 end
