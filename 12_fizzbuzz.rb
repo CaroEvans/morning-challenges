@@ -7,7 +7,6 @@
 # This is a trivial question with many simple solutions.
 # Try to write the least amount of code as possible.
 #
-#
 # Write a program that prints the numbers from 1 to 100.
 # But for multiples of three print “Fizz” instead of the
 # number and for the multiples of five print “Buzz”. For
@@ -26,4 +25,13 @@
 # ...etc
 #
 
-# Your code here
+def fizzbuzz
+  (1..100).each do |num|
+    print_value = ""
+    print_value.concat("Fizz") if num % 3 == 0
+    print_value.concat("Buzz") if num % 5 == 0
+    print_value == "" ? (puts num) : (puts print_value)
+  end
+end
+
+fizzbuzz()
