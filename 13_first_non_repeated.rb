@@ -31,6 +31,12 @@
 #
 
 def firstNonRepeat (string)
-  # Your code here
-  # Whiteboard first!
+  string_array = string.chars
+  all_chars = []
+  all_repeated_chars = []
+  string_array.each do |char|
+    all_chars.include?(char) ? all_repeated_chars.push(char) : all_chars.push(char)
+  end
+  all_non_repeated = all_chars - all_repeated_chars
+  all_non_repeated[0] ? all_non_repeated[0] : false
 end
