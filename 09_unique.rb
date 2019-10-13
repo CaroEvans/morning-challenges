@@ -19,5 +19,12 @@
 #
 
 def unique (mylist)
-  # Your code here
+  newlist = []
+  mylist.each do |item|
+    newlist.include?(item) ? next : newlist.push(item)
+  end
+  return newlist
 end
+
+unique([1,2,3,3]) 
+unique(["tom", "tom", "tom"])
