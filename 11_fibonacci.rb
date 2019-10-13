@@ -32,7 +32,7 @@ def nthFibonacci(n)
   fib_array = []
   (n+1).times do |add_fib|
     fib_array.push(0) and next if fib_array.empty?
-    fib_array.push(1) and next if fib_array.length == 1
+    fib_array.push(1) and next if fib_array.one?
     fib_array. push(fib_array[-2] + fib_array[-1])
   end
   return fib_array[-1]
