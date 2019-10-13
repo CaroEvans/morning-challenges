@@ -18,5 +18,9 @@
 #Try writing it on a whiteboard or paper first
 
 def in_array (needle, haystack)
-#your code here
+  answer = false
+  haystack.each do |item|
+    item == needle ? answer = true : next 
+  end
+  return answer
 end
