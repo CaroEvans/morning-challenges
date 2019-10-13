@@ -22,15 +22,15 @@
 #
 class Dictionary
   def initialize
-    @dictionary = []
+    @dictionary = {}
   end
   def add_word(word, definition)
     #@dictionary.push({word:word, definition:definition})
     @dictionary[word] = definition
   end
   def lookup(word)
-    @dictionary.each do |c|
-      return c[:definition] if c[:word] == word
+    @dictionary.each do |key, val|
+      return val if key == word
     end
   end
   def total_words
