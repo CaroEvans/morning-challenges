@@ -30,13 +30,24 @@
 # ruby tests/13_first_non_repeated_test.rb
 #
 
+# def firstNonRepeat (string)
+#   chars = []
+#   repeated_chars = []
+#   string.chars.each do |char|
+#     chars.include?(char) ? repeated_chars.push(char) : chars.push(char)
+#   end
+#   non_repeated = chars - repeated_chars
+#   non_repeated[0] ? non_repeated[0] : false
+# end
+
+# Beast mode: can you return on the first non-repeat,
+# without checking every other letter?
 def firstNonRepeat (string)
-  string_array = string.chars
-  all_chars = []
-  all_repeated_chars = []
-  string_array.each do |char|
-    all_chars.include?(char) ? all_repeated_chars.push(char) : all_chars.push(char)
+  string.each_index do |i|
+    char = string[i]
+    return char if (string[i-1] != char) && (string[i+1] != char)
+    false
   end
-  all_non_repeated = all_chars - all_repeated_chars
-  all_non_repeated[0] ? all_non_repeated[0] : false
 end
+
+firstNonRepeat('aaaabbbcccdeeefgh')
