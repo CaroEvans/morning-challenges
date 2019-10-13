@@ -23,6 +23,19 @@
 # ruby tests/11_fibonacci_test.rb
 #
 
-def nthFibonacci (n)
-#your code here
+# 0 1 1 2 3 5 8
+# n = 6
+# 0..6
+
+
+def nthFibonacci(n)
+  fib_array = []
+  (n+1).times do |add_fib|
+    fib_array.push(0) and next if fib_array.empty?
+    fib_array.push(1) and next if fib_array.length == 1
+    fib_array. push(fib_array[-2] + fib_array[-1])
+  end
+  return fib_array[-1]
 end
+
+nthFibonacci(6)

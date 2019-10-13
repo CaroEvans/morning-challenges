@@ -21,19 +21,15 @@
 #
 
 class Dictionary
-
   def initialize
     @word_list = {}
   end
-
   def add_word(word, meaning)
     @word_list[word] = meaning
   end
-  
   def total_words
     @word_list.size
   end
-
   def lookup(word)
     @word_list[word] ? @word_list[word] : (p "Sorry, that word isn't in the dictionary!")
   end
@@ -42,4 +38,4 @@ end
 dictionary = Dictionary.new
 dictionary.add_word('ruby', 'A precious stone')
 dictionary.total_words
-dictionary.lookup('ruby')
+dictionary.lookup('diamond')
