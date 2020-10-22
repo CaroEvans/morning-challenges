@@ -14,6 +14,10 @@
 # ruby tests/04_vowels_test.rb
 #
 
-def vowels (string)
-  # Your code here
+def vowels(string)
+  new_array = [ ]
+  string.each_char do |char|
+    new_array.push(char) if ['a', 'e', 'i', 'o', 'u'].include?(char.downcase)
+  end
+  new_array
 end
