@@ -14,12 +14,11 @@
 # ruby tests/03_sum_numbers_test.rb
 #
 
-# def sum_numbers (numbers)
-#   numbers.reduce(:+)
+# (numbers).inject do |sum, num|
+#   sum + num
 # end
-## filter and reduce are aliases
-def sum_numbers (numbers)
-  (numbers).filter do |sum, num| 
-    sum + num 
-  end
+## inject and reduce are aliases
+
+def sum_numbers(numbers)
+  numbers.reduce(:+)
 end
