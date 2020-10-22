@@ -14,6 +14,10 @@
 # ruby tests/01_reverse_test.rb
 #
 
-def reverse (string)
-  # Your code here
+def reverse(string)
+  new_string = ''
+  string.each_char do |char|
+    new_string = new_string.insert(0, char)
+  end
+  return new_string
 end
